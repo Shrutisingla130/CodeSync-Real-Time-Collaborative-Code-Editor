@@ -8,7 +8,7 @@ const app = express();
 
 const server = http.createServer(app);
 
-const url = `https://render-hosting-se2b.onrender.com`;
+const url = `https://codesync-real-time-collaborative-code-4rz1.onrender.com`;
 const interval = 30000;
 
 function reloadWebsite() {
