@@ -28,8 +28,6 @@
 - Responsive UI built with React + Vite  
 - Clean separation of frontend and backend
 
-(*You may add more features you have implemented: e.g., file sharing, persistence, authentication, syntax highlighting, language support, version history, etc.*)
-
 ---
 
 ## Tech Stack
@@ -37,10 +35,8 @@
 | Layer        | Technologies / Libraries                                           |
 |--------------|--------------------------------------------------------------------|
 | Frontend     | React, Vite, HTML, CSS, JavaScript                                 |
-| Backend      | Node.js, Express.js (or plain Node)                                |
-| Real-Time    | Socket.IO (or equivalent WebSocket library)                        |
-| Communication | REST APIs (if any)                                                 |
-| Others       | nodemon, CORS, dotenv, ESLint                                       |
+| Backend      | Node.js, Express.js                                                |
+| Real-Time    | Socket.IO                                                           |
 
 ---
 
@@ -51,17 +47,14 @@ A typical structure for this project:
 ```
 CodeSync-Real-Time-Collaborative-Code-Editor/
 ├── backend/
-│   ├── index.js
-│   ├── package.json
-│   ├── routes/
-│   ├── controllers/
-│   └── utils/
+│   └── index.js
 ├── frontend/
 │   ├── index.html
 │   ├── package.json
 │   ├── src/
 │   │   ├── main.jsx
 │   │   ├── App.jsx
+│   │   ├── App.css
 │   │   └── assets/
 │   └── public/
 ├── .gitignore
@@ -95,7 +88,7 @@ cd CodeSync-Real-Time-Collaborative-Code-Editor
 2. Install backend dependencies:
 
 ```bash
-cd backend
+cd ../backend
 npm install
 ```
 
@@ -118,11 +111,7 @@ cd ..
 
 ```bash
 cd backend
-# if a start script exists
-npm start
-
-# or run directly
-node index.js
+npm run dev
 ```
 
 - Start frontend (from `frontend` folder):
@@ -132,18 +121,12 @@ cd frontend
 npm run dev
 ```
 
-Open the URL printed by the Vite dev server (commonly `http://localhost:5173`). The backend typically listens on a port such as `3000` or `4000` — check `backend/index.js` or `backend/package.json` for the actual port.
-
----
-
-If you'd like, I can update the README to show exact `npm` scripts and port numbers by reading `backend/package.json` and `frontend/package.json` and inserting the precise commands. I can also add a `LICENSE`, Dockerfile, or GitHub Actions CI next.
-
 
 1. Clone the repo:
 
  ```bash
-   git clone https://github.com/megha-ra/LinkUp-RealTime-Chat-Webapp.git
-   cd LinkUp-RealTime-Chat-Webapp
+   git clone https://github.com/Shrutisingla130/CodeSync-Real-Time-Collaborative-Code-Editor
+   cd CodeSync-Real-Time-Collaborative-Code-Editor
 ````
 
 2. Install backend dependencies:
